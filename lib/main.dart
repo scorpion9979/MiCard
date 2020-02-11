@@ -33,58 +33,44 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
-              color: Colors.white,
+            Card(
               margin: EdgeInsets.symmetric(
                 vertical: 10,
                 horizontal: 25,
               ),
-              padding: EdgeInsets.all(10),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.phone,
-                    color: Colors.teal,
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  '+964 773 709 5696',
+                  style: TextStyle(
+                    fontFamily: 'Source Sans Pro',
+                    color: Colors.teal.shade900,
+                    fontSize: 20,
                   ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    '+964 773 709 5696',
-                    style: TextStyle(
-                      fontFamily: 'Source Sans Pro',
-                      color: Colors.teal.shade900,
-                      fontSize: 20,
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
-            Container(
-              color: Colors.white,
+            Card(
               margin: EdgeInsets.symmetric(
                 vertical: 10,
                 horizontal: 25,
               ),
-              padding: EdgeInsets.all(10),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.web,
-                    color: Colors.teal,
+              child: ListTile(
+                leading: Icon(
+                  Icons.web,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  'ahmedtawfeeq.me',
+                  style: TextStyle(
+                    fontFamily: 'Source Sans Pro',
+                    color: Colors.teal.shade900,
+                    fontSize: 20,
                   ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    'ahmedtawfeeq.me',
-                    style: TextStyle(
-                      fontFamily: 'Source Sans Pro',
-                      color: Colors.teal.shade900,
-                      fontSize: 20,
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
           ],
